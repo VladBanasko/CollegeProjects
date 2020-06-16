@@ -1,0 +1,27 @@
+﻿body {
+}
+
+header {
+    height: 100px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    background: url("../Images/back.jpg");
+    background-size: cover;
+    font-size: 3em;
+    color: black;
+    opacity: 0.5;
+}
+
+footer{
+    text-align:center;
+}
+#nav {
+   
+    padding: 5px;
+}
+li {
+    display: inline;
+    padding: 5px;
+    column-width: 20px;
+}  
