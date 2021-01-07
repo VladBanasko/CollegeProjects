@@ -1,0 +1,56 @@
+body {
+    background-color: darksalmon;
+}
+
+.gridArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "category pic" "footer footer";
+    grid-gap: 5px;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#category {
+    grid-area: category;
+}
+
+#pic {
+    grid-area: pic;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#categoryList li {
+    margin: 45px
+}
+
+li {
+    text-align: center;
+    padding: 2px;
+    margin: 0px 10px 5px 2px;
+    list-style-type: none;
+}
+
+a {
+    border-radius: 25px;
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px;
+}
