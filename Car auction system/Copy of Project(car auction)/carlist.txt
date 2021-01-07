@@ -1,0 +1,6 @@
+hond,1235,Auto,23456.0
+ford,123,Auto,9990.0
+honda,654,Auto,789.0
+mis,543,Auto,789.0
+lambo,789,Auto,98765.0
+
