@@ -1,0 +1,11 @@
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\MTFVladyslavBanasko\MTFVladyslavBanasko\bin\Debug\MTFVladyslavBanasko.exe.config
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\MTFVladyslavBanasko\MTFVladyslavBanasko\bin\Debug\MTFVladyslavBanasko.exe
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\MTFVladyslavBanasko\MTFVladyslavBanasko\bin\Debug\MTFVladyslavBanasko.pdb
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\MTFVladyslavBanasko\MTFVladyslavBanasko\obj\Debug\MTFVladyslavBanasko.csprojAssemblyReference.cache
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\MTFVladyslavBanasko\MTFVladyslavBanasko\obj\Debug\MTFVladyslavBanasko.Form1.resources
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\MTFVladyslavBanasko\MTFVladyslavBanasko\obj\Debug\MTFVladyslavBanasko.Properties.Resources.resources
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\MTFVladyslavBanasko\MTFVladyslavBanasko\obj\Debug\MTFVladyslavBanasko.csproj.GenerateResource.cache
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\MTFVladyslavBanasko\MTFVladyslavBanasko\obj\Debug\MTFVladyslavBanasko.exe
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\MTFVladyslavBanasko\MTFVladyslavBanasko\obj\Debug\MTFVladyslavBanasko.pdb
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\MTFVladyslavBanasko\MTFVladyslavBanasko\obj\Debug\MTFVladyslavBanasko.Form2.resources
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\MTFVladyslavBanasko\MTFVladyslavBanasko\obj\Debug\MTFVladyslavBanasko.csproj.CoreCompileInputs.cache
