@@ -1,0 +1,10 @@
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\A2VladyslavBanasko\A2VladyslavBanasko\bin\Debug\A2VladyslavBanasko.exe.config
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\A2VladyslavBanasko\A2VladyslavBanasko\bin\Debug\A2VladyslavBanasko.exe
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\A2VladyslavBanasko\A2VladyslavBanasko\bin\Debug\A2VladyslavBanasko.pdb
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\A2VladyslavBanasko\A2VladyslavBanasko\obj\Debug\A2VladyslavBanasko.csprojAssemblyReference.cache
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\A2VladyslavBanasko\A2VladyslavBanasko\obj\Debug\A2VladyslavBanasko.Form1.resources
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\A2VladyslavBanasko\A2VladyslavBanasko\obj\Debug\A2VladyslavBanasko.Properties.Resources.resources
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\A2VladyslavBanasko\A2VladyslavBanasko\obj\Debug\A2VladyslavBanasko.csproj.GenerateResource.cache
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\A2VladyslavBanasko\A2VladyslavBanasko\obj\Debug\A2VladyslavBanasko.exe
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\A2VladyslavBanasko\A2VladyslavBanasko\obj\Debug\A2VladyslavBanasko.pdb
+D:\Sheridan\Sheridan\4semester4\webservices C#\projects\A2VladyslavBanasko\A2VladyslavBanasko\obj\Debug\A2VladyslavBanasko.csproj.CoreCompileInputs.cache
