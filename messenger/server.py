@@ -38,9 +38,15 @@ def status():
 
 
 @app.route("/send")
-def send():
-    # TODO
-    return {'ok': True}
+def send_message():
+    #try:
+        name = request.json['name']
+        text = request.json['text']
+   # except:
+
+
+
+
 
 
 @app.route("/messages")
