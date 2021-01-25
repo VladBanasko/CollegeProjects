@@ -37,16 +37,33 @@ def status():
     }
 
 
-@app.route("/send")
+@app.route("/send", methods=['POST'])
 def send_message():
-    #try:
-        name = request.json['name']
-        text = request.json['text']
-   # except:
 
+    if isinstance(request.json, dict):
+        return abort(400)
+    if 'name' not in request.json:
+        return abort(400)
+    if 'text' not in request.json:
+        return abort(400)
 
+    name = request.json['name']
+    text = request.json['text']
 
+    if not isinstance(name, str):
+        return abort(400)
+    if not isinstance(text, str):
+        return abort(400)
+    if 'name' == '' or 'text' == '':
+        return abort(400)
 
+    message = {
+        'text': text,
+        'time': time.time(),
+        'name': name
+    }
+    db.append(message)
+    return {'ok', True}
 
 
 @app.route("/messages")
