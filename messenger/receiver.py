@@ -2,7 +2,7 @@ import time
 from datetime import datetime
 import requests
 
-
+# print massages method with update 1 second
 def print_message(message):
     message_time = datetime.fromtimestamp(message['time'])
     message_time = message_time.strftime('%Y/%m/%d %H:%M:%S')
