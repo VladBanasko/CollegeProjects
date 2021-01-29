@@ -19,6 +19,7 @@ class Messenger(QtWidgets.QMainWindow, clientui.Ui_MainWindow):
         self.timer.timeout.connect(self.get_messages)
         self.timer.start(1000)
 
+    # get messages to display
     def get_messages(self):
         try:
             response = requests.get('http://127.0.0.1:5000/messages',
@@ -32,6 +33,7 @@ class Messenger(QtWidgets.QMainWindow, clientui.Ui_MainWindow):
             self.print_message(message)
             self.after = message['time']
 
+    # print messages in textBrowser Area
     def print_message(self, message):
         message_time = datetime.fromtimestamp(message['time'])
         message_time = message_time.strftime('%Y/%m/%d %H:%M:%S')
@@ -39,6 +41,7 @@ class Messenger(QtWidgets.QMainWindow, clientui.Ui_MainWindow):
         self.textBrowser.append(message['text'])
         self.textBrowser.append('')
 
+    # send message area
     def send_message(self):
         name = self.lineEdit.text()
         text = self.textEdit.toPlainText()
@@ -58,6 +61,8 @@ class Messenger(QtWidgets.QMainWindow, clientui.Ui_MainWindow):
             return
 
         self.textEdit.setText('')
+
+    # running messenger 
 
 
 app = QtWidgets.QApplication([])
