@@ -1,20 +1,18 @@
-import flask
 import time
 from datetime import datetime
 
 from flask import Flask, request, abort
 
 app = Flask(__name__)
-
 db = [
     {
         'text': 'Hi',
-        'time': time.time(),
+        'time': 100,
         'name': 'Nick'
     },
     {
-        'text': 'Hi, Nick',
-        'time': time.time(),
+        'text': 'Hello, Nick',
+        'time': 200,
         'name': 'Jane'
     }
 ]
@@ -27,34 +25,30 @@ def hello():
 
 @app.route("/status")
 def status():
+    now = datetime.now()
     return {
         'status': True,
-        'name': 'Python messenger',
+        'name': 'messenger',
         'time1': time.time(),
         'time2': time.asctime(),
-        'time3': datetime.now(),
-
+        'time3': now,
+        'time4': str(now),
+        'time5': now.isoformat(),
+        'time6': now.strftime('%Y/%m/%d %H:%M:%S сейчас на сервере'),
     }
 
 
 @app.route("/send", methods=['POST'])
 def send_message():
-
-    if isinstance(request.json, dict):
-        return abort(400)
-    if 'name' not in request.json:
-        return abort(400)
-    if 'text' not in request.json:
+    if not isinstance(request.json, dict):
         return abort(400)
 
-    name = request.json['name']
-    text = request.json['text']
+    name = request.json.get('name')
+    text = request.json.get('text')
 
-    if not isinstance(name, str):
+    if not isinstance(name, str) or not isinstance(text, str):
         return abort(400)
-    if not isinstance(text, str):
-        return abort(400)
-    if 'name' == '' or 'text' == '':
+    if name == '' or text == '':
         return abort(400)
 
     message = {
@@ -63,7 +57,7 @@ def send_message():
         'name': name
     }
     db.append(message)
-    return {'ok', True}
+    return {'ok': True}
 
 
 @app.route("/messages")

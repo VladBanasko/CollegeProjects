@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>601</width>
-    <height>544</height>
+    <width>420</width>
+    <height>443</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,83 +17,78 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>390</y>
-      <width>93</width>
-      <height>51</height>
+      <x>340</x>
+      <y>364</y>
+      <width>51</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Send</string>
+     <string>&gt;</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>390</y>
-      <width>341</width>
-      <height>51</height>
+      <x>30</x>
+      <y>364</y>
+      <width>301</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>Inpute text</string>
+     <string>Введите текст...</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>120</y>
-      <width>471</width>
+      <x>30</x>
+      <y>90</y>
+      <width>361</width>
       <height>261</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>70</y>
-      <width>113</width>
-      <height>31</height>
      </rect>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>20</y>
-      <width>161</width>
+      <x>130</x>
+      <y>14</y>
+      <width>191</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Python Messenger</string>
+     <string>Skillbox Messenger</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>278</x>
+      <y>58</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>70</y>
-      <width>81</width>
+      <x>205</x>
+      <y>60</y>
+      <width>71</width>
       <height>16</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
     <property name="text">
-     <string>Input name</string>
+     <string>Ваше имя:</string>
     </property>
    </widget>
   </widget>

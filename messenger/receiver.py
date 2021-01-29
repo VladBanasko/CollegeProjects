@@ -1,9 +1,9 @@
 import time
 from datetime import datetime
+
 import requests
 
 
-# print massages method with update 1 second
 def print_message(message):
     message_time = datetime.fromtimestamp(message['time'])
     message_time = message_time.strftime('%Y/%m/%d %H:%M:%S')
@@ -15,9 +15,10 @@ def print_message(message):
 after = 0
 
 while True:
-
-    response = requests.get('http://127.0.0.1:5000/messages',
-                            params={'after': after})
+    response = requests.get(
+        'http://127.0.0.1:5000/messages',
+        params={'after': after}
+    )
     messages = response.json()['messages']
 
     for message in messages:

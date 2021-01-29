@@ -16,12 +16,16 @@ class Messenger(QtWidgets.QMainWindow, clientui.Ui_MainWindow):
         self.after = 0
         # to run by timer:
         self.timer = QtCore.QTimer()
-        self.timer.timeout.connect(self.get_messages())
+        self.timer.timeout.connect(self.get_messages)
         self.timer.start(1000)
 
     def get_messages(self):
-        response = requests.get('http://127.0.0.1:5000/messages',
-                                params={'after': self.after})
+        try:
+            response = requests.get('http://127.0.0.1:5000/messages',
+                                    params={'after': self.after})
+        except:
+            return
+
         messages = response.json()['messages']
 
         for message in messages:
@@ -32,18 +36,26 @@ class Messenger(QtWidgets.QMainWindow, clientui.Ui_MainWindow):
         message_time = datetime.fromtimestamp(message['time'])
         message_time = message_time.strftime('%Y/%m/%d %H:%M:%S')
         self.textBrowser.append(message_time + ' ' + message['name'])
-        self.textBrowser.append(message['time'])
-        self.textBrowser.append(' ')
-
-        # print(message_time, message['name'])
-        # print(message['text'])
-        # print()
+        self.textBrowser.append(message['text'])
+        self.textBrowser.append('')
 
     def send_message(self):
         name = self.lineEdit.text()
         text = self.textEdit.toPlainText()
-        requests.post('http://127.0.0.1:5000/send',
-                      json={'name': name, 'text': text})
+
+        try:
+            response = requests.post('http://127.0.0.1:5000/send',
+                                     json={'name': name, 'text': text})
+        except:
+            self.textBrowser.append('Server unavailable.Try later')
+            self.textBrowser.append('')
+            return
+
+        if response.status_code != 200:
+            self.textBrowser.append('During sending message error occurred')
+            self.textBrowser.append('Check name and text of message')
+            self.textBrowser.append('')
+            return
 
         self.textEdit.setText('')
 
