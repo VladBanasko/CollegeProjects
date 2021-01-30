@@ -22,7 +22,7 @@ db = [
 def hello():
     return "Hello, World!"
 
-
+# status page of server
 @app.route("/status")
 def status():
     now = datetime.now()
@@ -59,7 +59,7 @@ def send_message():
     db.append(message)
     return {'ok': True}
 
-
+# messages page 
 @app.route("/messages")
 def get_messages():
     try:
