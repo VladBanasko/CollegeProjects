@@ -48,7 +48,7 @@ function loadJSON(data) {
 
             pList.push(new Prov(prov.name, prov.type, prov.capital, prov.pic, cities));
 
-        }
+        } 
     } // end of for loop
 
     console.log(pList);
